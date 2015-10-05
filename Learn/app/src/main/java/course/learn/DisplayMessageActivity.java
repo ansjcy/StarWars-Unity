@@ -1,10 +1,15 @@
 package course.learn;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class DisplayMessageActivity extends Activity {
@@ -18,6 +23,7 @@ public class DisplayMessageActivity extends Activity {
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(message);
+
         setContentView(textView);
     }
 
